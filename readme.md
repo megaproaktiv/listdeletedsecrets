@@ -1,5 +1,11 @@
 # List deleted secrets from AWS Secrets Manager
 
+## Notice
+
+AWS Secrets Manager now supports listing secrets scheduled for deletion with a new request parameter, `IncludePlannedDeletion`. This library has been updated to use that as `IncludeDeleted` is slated for deprecation.
+
+-----------------------
+
 When you delete a secret from *AWS Secrets Manager*, the standard 
 `aws secretsmanager list-secrets` does *not* show these secrets.
 
