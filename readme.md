@@ -6,6 +6,13 @@ AWS Secrets Manager now supports listing secrets scheduled for deletion with a n
 
 -----------------------
 
+The new API is used in the AWS console now also:
+
+![Alt text](img/includeplanneddeletion.png)
+![Alt text](img/includedeleted.png)
+
+Old API:
+-------
 When you delete a secret from *AWS Secrets Manager*, the standard 
 `aws secretsmanager list-secrets` does *not* show these secrets.
 
